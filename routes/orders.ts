@@ -15,10 +15,27 @@ router.get('/:id', async (req: Request, res: Response) => {
   const result = orders.find((order: any) => order.id === parseInt(id, 10))
 
   if (!result) {
-    return res.status(404)
+    return res.sendStatus(404)
   }
 
   return res.json(result)
+})
+
+router.post('/', async (req: Request, res: Response) => {
+  const payload = req.body
+
+  const orders = await storage.getItem('orders')
+  const alreadyExists = orders.find((order: any) => order.id === payload.id)
+
+  if (alreadyExists) {
+    return res.sendStatus(409)
+  }
+
+  orders.push(payload)
+
+  await storage.setItem('orders', orders)
+
+  res.sendStatus(201)
 })
 
 export default router

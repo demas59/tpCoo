@@ -43,6 +43,27 @@ export const orders = [
           }
         ]
       }
-    ]
+    ],
+    delivery: {
+      storePickingInterval: {
+        start: '2020-10-15T15:00:00.000Z',
+        end: '2020-10-15T16:00:00.000Z',
+      },
+      deliveryInterval: {
+        start: '2020-10-16T17:00:00.000Z',
+        end: '2020-10-16T19:00:00.000Z',
+      },
+      contact: {
+        fullname: 'André Martel',
+        email: 'andre.martel@mail.fr',
+        phone: '+33600000000',
+        address: '237 rue du ballon',
+        postalCode: '59000',
+        city: 'Lille',
+      },
+      carrier: {
+        name: 'Chronopost',
+      }
+    }
   }
 ]
