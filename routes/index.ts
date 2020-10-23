@@ -1,11 +1,13 @@
 import { Router, Request, Response } from 'express'
+import IndexController from '../controller/indexController'
 
 const router = Router()
+const controller = new IndexController();
 
 router.get('/', async (req: Request, res: Response) => {
-  res.send('Hello World !')
+  controller.getHello(req,res);
 })
 
-router.get('/favicon.ico', (req: Request, res: Response) => res.status(204))
+router.get('/favicon.ico', (req: Request, res: Response) => controller.getFavicon(req,res))
 
 export default router
