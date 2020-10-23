@@ -1,7 +1,5 @@
 import Order from '../types'
-import StorageSingleton from '../classes/StorageSingleton'
-
-const storage = StorageSingleton.getInstance();
+import storage from '../classes/Storage'
 
 export default class OrderModel{
     getOrders():Promise<Order[]>{

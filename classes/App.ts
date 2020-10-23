@@ -4,6 +4,7 @@ import path from 'path'
 import cookieParser from 'cookie-parser'
 import indexRouter from '../routes/index'
 import ordersRouter from '../routes/orders'
+import Storage from '../classes/Storage'
 
 export default class App {
 
@@ -13,6 +14,7 @@ export default class App {
         this.instance = instance
         this._registerMiddlewares();
         this._registerRoutes();
+        this._initData();
     }
 
     private _registerMiddlewares(): void {
@@ -26,6 +28,10 @@ export default class App {
     private _registerRoutes(): void {
             this.instance.use('/', indexRouter)
             this.instance.use('/orders', ordersRouter)
+    }
+
+    private _initData():void {
+        new Storage('orders');
     }
 
     public get getInstance(): express.Application{
