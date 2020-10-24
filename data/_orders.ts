@@ -1,138 +1,138 @@
-import Order from '../types';
+import Order from "../classes/types";
 
-export const orders:Order[] = [
+export const orders: Order[] = [
   {
     id: 1,
     packages: [
       {
         length: {
-          unit: 'cm',
-          value: 50
+          unit: "cm",
+          value: 50,
         },
         width: {
-          unit: 'cm',
-          value: 50
+          unit: "cm",
+          value: 50,
         },
         height: {
-          unit: 'cm',
-          value: 50
+          unit: "cm",
+          value: 50,
         },
         weight: {
-          unit: 'kg',
-          value: 2.55
+          unit: "kg",
+          value: 2.55,
         },
         products: [
           {
-            name: 'Paire de dés en mousse',
+            name: "Paire de dés en mousse",
             price: {
-              currency: 'EUR',
-              value: 2.36
-            }
+              currency: "EUR",
+              value: 2.36,
+            },
           },
           {
-            name: 'Trépied caméra',
+            name: "Trépied caméra",
             price: {
-              currency: 'EUR',
-              value: 15.50
-            }
+              currency: "EUR",
+              value: 15.5,
+            },
           },
           {
-            name: 'Clavier Razer',
+            name: "Clavier Razer",
             price: {
-              currency: 'EUR',
-              value: 2500
-            }
-          }
-        ]
-      }
+              currency: "EUR",
+              value: 2500,
+            },
+          },
+        ],
+      },
     ],
     delivery: {
       storePickingInterval: {
-        start: '2020-10-15T15:00:00.000Z',
-        end: '2020-10-15T16:00:00.000Z',
+        start: "2020-10-15T15:00:00.000Z",
+        end: "2020-10-15T16:00:00.000Z",
       },
       deliveryInterval: {
-        start: '2020-10-16T17:00:00.000Z',
-        end: '2020-10-16T19:00:00.000Z',
+        start: "2020-10-16T17:00:00.000Z",
+        end: "2020-10-16T19:00:00.000Z",
       },
       contact: {
-        fullname: 'André Martel',
-        email: 'andre.martel@mail.fr',
-        phone: '+33600000000',
-        address: '237 rue du ballon',
-        postalCode: '59000',
-        city: 'Lille',
+        fullname: "André Martel",
+        email: "andre.martel@mail.fr",
+        phone: "+33600000000",
+        address: "237 rue du ballon",
+        postalCode: "59000",
+        city: "Lille",
       },
       carrier: {
-        name: 'Chronopost',
-      }
-    }
+        name: "Chronopost",
+      },
+    },
   },
   {
     id: 2,
     packages: [
       {
         length: {
-          unit: 'cm',
-          value: 50
+          unit: "cm",
+          value: 50,
         },
         width: {
-          unit: 'cm',
-          value: 50
+          unit: "cm",
+          value: 50,
         },
         height: {
-          unit: 'cm',
-          value: 50
+          unit: "cm",
+          value: 50,
         },
         weight: {
-          unit: 'kg',
-          value: 2.55
+          unit: "kg",
+          value: 2.55,
         },
         products: [
           {
-            name: 'Paire de dés en mousse',
+            name: "Paire de dés en mousse",
             price: {
-              currency: 'EUR',
-              value: 2.36
-            }
+              currency: "EUR",
+              value: 2.36,
+            },
           },
           {
-            name: 'Trépied caméra',
+            name: "Trépied caméra",
             price: {
-              currency: 'EUR',
-              value: 15.50
-            }
+              currency: "EUR",
+              value: 15.5,
+            },
           },
           {
-            name: 'Clavier Razer',
+            name: "Clavier Razer",
             price: {
-              currency: 'EUR',
-              value: 2500
-            }
-          }
-        ]
-      }
+              currency: "EUR",
+              value: 2500,
+            },
+          },
+        ],
+      },
     ],
     delivery: {
       storePickingInterval: {
-        start: '2020-10-15T15:00:00.000Z',
-        end: '2020-10-15T16:00:00.000Z',
+        start: "2020-10-15T15:00:00.000Z",
+        end: "2020-10-15T16:00:00.000Z",
       },
       deliveryInterval: {
-        start: '2020-10-16T17:00:00.000Z',
-        end: '2020-10-16T19:00:00.000Z',
+        start: "2020-10-16T17:00:00.000Z",
+        end: "2020-10-16T19:00:00.000Z",
       },
       contact: {
-        fullname: 'André Martel',
-        email: 'andre.martel@mail.fr',
-        phone: '+33600000000',
-        address: '237 rue du ballon',
-        postalCode: '59000',
-        city: 'Lille',
+        fullname: "André Martel",
+        email: "andre.martel@mail.fr",
+        phone: "+33600000000",
+        address: "237 rue du ballon",
+        postalCode: "59000",
+        city: "Lille",
       },
       carrier: {
-        name: 'Chronopost',
-      }
-    }
+        name: "Chronopost",
+      },
+    },
   },
-]
+];
